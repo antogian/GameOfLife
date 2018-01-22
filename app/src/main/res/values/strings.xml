@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Conway\'s Game of Life</string>
+    <string name="title_activity_game">GameActivity</string>
+</resources>

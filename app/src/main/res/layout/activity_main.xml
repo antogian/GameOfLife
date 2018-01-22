@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tony.gameoflife.com.antogian.gameoflife.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorPrimary" android:layout_height="match_parent"
+        android:layout_width="fill_parent" android:padding="30dip"
+        android:orientation="horizontal">
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="wrap_content" android:layout_width="match_parent"
+            android:layout_gravity="center">
+            <TextView android:text="Conway's Game of Life"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:layout_gravity="center" android:layout_marginBottom="25dip"
+            android:textSize="24.5sp" />
+
+            <Button
+                android:id="@+id/new_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Game"
+                android:onClick="newButton_onClick"
+                tools:text="New Game" />
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:onClick="aboutButton_onClick"
+                tools:text="About" />
+
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:onClick="exitButton_onClick"
+                tools:text="Exit" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
