@@ -2,13 +2,14 @@ package com.antogian.gameoflife;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.antogian.gameoflife.GridActivity;
-import com.example.tony.gameoflife.R;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -31,10 +32,12 @@ public class MainActivity extends AppCompatActivity
 
     public void aboutButton_onClick(View v)
     {
-        //Toast toast;
-        Toast.makeText(getApplicationContext(),"The Game of Life, or simply known as Life, is a cellular automation devised" +
-                " by the British Mathematician John Horton Conway in 1970." +
-                "It is the best-known example of cellular automation",Toast.LENGTH_LONG).show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.app_name);
+        builder.setMessage("Game of Life is the most known cellular automaton implementation. " +
+                "It was devised by the british Mathematician John H. Conway.");
+        builder.create();
+        builder.show();
     }
 
     public void exitButton_onClick(View v)

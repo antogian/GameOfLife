@@ -3,7 +3,6 @@ package com.antogian.gameoflife;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.tony.gameoflife.R;
 
 public class GridActivity extends AppCompatActivity
 {
